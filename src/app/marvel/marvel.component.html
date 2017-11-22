@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()" >
+    <div ng-show="message != null">
+      {{message}}
+    </div>
+   
+    <button type="submit" >Obter dados Marvel</button>
+</form>
+
+<div *ngIf="resultado">
+  {{resultado}}
+
+</div>
